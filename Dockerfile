@@ -35,6 +35,7 @@ RUN wget -O /etc/squid/hosts http://winhelp2002.mvps.org/hosts.txt
 COPY privoxy/config /etc/privoxy/config
 COPY ziproxy/ziproxy.conf /etc/ziproxy/ziproxy.conf
 COPY squid/squid.conf /etc/squid/squid.conf
+COPY squid/passwd /etc/squid/passwd
 
 # supervisor
 COPY supervisor.conf /etc/supervisord.conf
